@@ -5,7 +5,7 @@ ENV NODE_ENV=production
 
 WORKDIR /app
 
-COPY ["package.json", "./"]
+COPY ["package.json", "package-lock.json", "./"]
 
 RUN npm config set strict-ssl false
 
