@@ -9,6 +9,8 @@ COPY ["package.json", "package-lock.json", "./"]
 
 RUN npm config set registry https://nexus.eurocontrol.int/repository/npmjs-public/
 
+RUN npm set _auth=cDJvM2VJTVA6YkFUbzFyWDF3MnJQcWtaamRRVDBmRVk3aVRQd19UczdJeFUyMWljVXdjSW4=
+
 RUN npm install --production 
 
 COPY . .
